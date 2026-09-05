@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
   color: #243e63;
 }
 
@@ -57,6 +58,10 @@ NAVBAR
 nav{
   display: flex;
   padding-top: 32px;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .nav__row {
@@ -115,17 +120,83 @@ HEADER/ABOUT US
 
 */
 
-header {
-  width: 100%;
-  height: 100vh;
+header .row {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header__description {
+  width: 40%;
+  box-sizing: border-box;
+  display: block;
+  color: rgba(36, 62, 99);
+  height: 440px;
+  width: 390px;
+  font-size: 16px;
+}
+
+h1 {
+  color: #1a202c;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.header__description--para {
+  margin: 32px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.header__email {
+  display: flex;
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--input {
+  width: 100%;
+  border-radius: 500px;
+  border: 2px solid rgba(229, 231, 235);
+  padding: 20px 192px 20px 32px;
+  color: rgba(36, 62, 99);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color 300ms ease;
+}
+
+.header__email--btn {
+  
+}
+
+.header__customers--title {
+
 }
 
 .header__img--wrapper {
-  display: flex;
-  justify-content: center;
+  width: calc(100% - 40%)
 }
 
 .header__img {
-  width: 65%;
+  width: 100%;
+  max-width: 768px;
 }
